@@ -1,0 +1,15 @@
+[Unit]
+Description=nodejshelloapp
+
+[Service]
+ExecStart=/usr/bin/node /root/CASE_LNX/app/app.js
+WorkingDirectory=/root/CASE_LNX/app
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=nodejs-example
+Environment=NODE_ENV=production PORT=3000
+
+[Install]
+WantedBy=multi-user.target

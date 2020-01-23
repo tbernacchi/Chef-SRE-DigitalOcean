@@ -1,0 +1,4 @@
+source 'https://supermarket.chef.io'
+'build-essential' '~>= 5.0' 
+'ark' '~>= 2.0.2'
+metadata
