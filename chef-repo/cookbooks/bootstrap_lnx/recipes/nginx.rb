@@ -3,15 +3,6 @@
 # Recipe:: nginx
 #
 # Copyright:: 2020, The Authors, All Rights Reserved.
-cookbook_file '/etc/sysconfig/selinux' do
- source 'sysconfig/selinux'
- owner 'root'
- group 'root'
- mode '0644'
- action :create
- not_if 'getenforce | grep -q Disabled'
-end
-
 execute "yum-clean-all" do
  command "yum clean all"
  action :run
