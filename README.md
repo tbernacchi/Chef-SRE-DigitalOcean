@@ -17,6 +17,11 @@ This directory contains the chef-repo where cookbooks are stored and a simple sc
 
 After the execution it's finished the server it's registered on Chef-server with nodejs installed.
 
+- Upload cookbooks:
+<pre>knife cookbook upload nodejs --force
+knife cookbook upload bootstrap_lnx
+</pre>
+
 - Add the bootstrap_lnx recipe:
 ```
 knife node run_list add <node> "recipe[bootstrap_lnx]"
