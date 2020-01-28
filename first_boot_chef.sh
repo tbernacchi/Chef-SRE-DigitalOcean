@@ -1,6 +1,14 @@
 #!/bin/bash
 # Register the host on Chef-server.
 # You should replace the lnx_teste.pem with your own from your chef_server as well the url_chef_server on cliente.rb.
+
+install_ruby () {  
+curl -sSL https://get.rvm.io | bash -s stable --ruby
+rvm install 2.4.0
+rvm use 2.4.0 --default
+} 
+install_ruby 
+
 export HOME=/root
 IP="$(hostname -I)"
 FQDN="$(hostname -f)"
@@ -66,7 +74,7 @@ touch /etc/chef/client.rb
 
 cat <<EOF > /etc/chef/client.rb
 # Server definitions
-chef_server_url  "https://<url_chef_server>/organizations/lnx_teste"
+chef_server_url  "https://174.138.44.254/organizations/lnx_teste"
 validation_key "/etc/chef/lnx_teste.pem"
 validation_client_name "lnx_teste-validator" 
 node_name "${FQDN}"
