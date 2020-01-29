@@ -16,7 +16,7 @@ This directory contains the chef-repo where cookbooks are stored and a simple sc
 
 After the execution it's finished the server it's registered on Chef-server with nodejs installed. 
 
-##Knife
+## Knife
 We must copy the user and the validation key from the Chef-server to our workstation.
 
 ```
@@ -42,7 +42,7 @@ knife[:editor]="vim"
 knife ssl check
 </pre> 
 
-To check:
+- To check:
 
 ```
 knife client list 
@@ -63,4 +63,5 @@ knife node run_list add <node> "recipe[bootstrap_lnx]"
 chef-client
 ```
 
-For more information about Chef-server and Knife: http://www.tadeubernacchi.com.br/chef-workstation-chef-server-chef-client-via-bootstrap/
+For more information about Chef-server and Knife: 
+http://www.tadeubernacchi.com.br/chef-workstation-chef-server-chef-client-via-bootstrap/
