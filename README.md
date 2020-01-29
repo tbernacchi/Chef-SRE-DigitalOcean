@@ -63,5 +63,5 @@ knife node run_list add <node> "recipe[bootstrap_lnx]"
 chef-client
 ```
 
-For more information about Chef-server and Knife: 
+For more information about Chef-server and Knife:<br/> 
 http://www.tadeubernacchi.com.br/chef-workstation-chef-server-chef-client-via-bootstrap/
