@@ -3,9 +3,8 @@ Instructions to use this project.
 
 ## Requirements
 - Chef-server;
+- knife (Chef-client);
 - CentOS 7.6 
-- Ruby 2.4.0 or higher;
-- selinux disable;
 
 ## How-to 
 This directory contains the chef-repo where cookbooks are stored and a simple script to register the node on chef-server.

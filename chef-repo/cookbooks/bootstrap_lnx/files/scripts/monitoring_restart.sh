@@ -40,7 +40,7 @@ PS=`ps -ef | grep node | grep -v grep`
 
 
 fn_send_email() {
-	/bin/mail -s "Service $serv was DOWN on `hostname` and was restarted now - `date +%d/%m/%Y`" tbernacchi@gmail.com < $MESSAGE
+	/bin/mail -s "Service $serv was DOWN on `hostname` and was restarted - `date +%d/%m/%Y`" tbernacchi@gmail.com < $MESSAGE
 }
 
 fn_check_ws_ps

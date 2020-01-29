@@ -1,11 +1,15 @@
 #!/bin/bash
 # Register the host on Chef-server.
 # You should replace the lnx_teste.pem with your own from your chef_server as well the url_chef_server on cliente.rb.
+#Disable selinux
+echo 0 > /sys/fs/selinux/enforce
 
 install_ruby () {  
 curl -sSL https://get.rvm.io | bash -s stable --ruby
-rvm install 2.4.0
-rvm use 2.4.0 --default
+curl -sSL https://rvm.io/mpapis.asc | gpg2 --import -
+curl -sSL https://rvm.io/pkuczynski.asc | gpg2 --import -
+rvm install 2.4.0 2> /dev/null
+rvm use 2.4.0 --default 2> /dev/null
 } 
 install_ruby 
 
@@ -32,6 +36,7 @@ echo "${IP} ${FQDN} ${HOSTNAME}" >> /etc/hosts
 
 #Install Chef
 yum clean all
+yum install wget -y
 yum makecache fast
 wget -q https://packages.chef.io/files/stable/chef/13.10.0/el/7/"${CHEF_VERSION}"
 
