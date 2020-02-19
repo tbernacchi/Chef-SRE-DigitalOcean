@@ -1,4 +1,4 @@
-# lnx_sre
+# OI AMIGOS QUE NÃO SABEM USAR O CHEF!!!
 Instructions to use this project.
 
 ## Requirements
