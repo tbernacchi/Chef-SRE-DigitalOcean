@@ -1,4 +1,4 @@
-#lnx_sre
+## lnx_sre
 Instructions to use this project.
 
 ## Requirements
