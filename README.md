@@ -1,5 +1,5 @@
-## lnx_sre
-Instructions to use this project.
+## Chef SRE DigitalOcean
+I use this repo for a challenge, it's a cookbook to deploy a node.js app.
 
 ## Requirements
 - Chef-server;
