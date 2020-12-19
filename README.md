@@ -4,7 +4,7 @@
 
 > Chef cookbook to deploy a node-js app (linx SRE test)
 
-![Chef](/.github/assets/img/chef-logo.png)
+![Chef](/.github/assets/img/chef-logo-svg.svg)
 
 <div align=>
 	<img align="right" width="200px" src=/.github/assets/img/nodejs-logo.png>
