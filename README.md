@@ -1,3 +1,26 @@
+<h1 align="">Chef cookbook to deploy a node-js app 👋</h1>
+<p>
+</p>
+
+> Chef cookbook to deploy a node-js app (linx SRE test)
+
+![Chef](/.github/assets/img/chef-logo.png)
+
+<div align=>
+	<img align="right" width="200px" src=/.github/assets/img/nodejs-logo.png>
+</div> 
+
+## Table of Contents
+
+* **Chef**  
+  * [Official Website](https://www.chef.io/)
+  * [Official Docs](https://docs.chef.io/)
+  * [Official Github](https://github.com/chef/chef)
+* **Nodejs**
+  * [Offical Website](https://nodejs.org/en/)
+  * [Offical Docs](https://nodejs.org/en/docs/)
+  * [Official Github](https://github.com/nodejs)
+
 ## Chef SRE DigitalOcean
 I use this repo for a challenge, it's a cookbook to deploy a node.js app.
 
@@ -65,3 +88,19 @@ chef-client
 
 For more information about Chef-server and Knife:<br/> 
 http://www.tadeubernacchi.com.br/chef-workstation-chef-server-chef-client-via-bootstrap/
+
+## Author
+
+👤 **Tadeu Bernacchi**
+
+* Website: http://www.tadeubernacchi.com.br/
+* Twitter: [@tadeuuuuu](https://twitter.com/tadeuuuuu)
+* Github: [@tbernacchi](https://github.com/tbernacchi)
+* LinkedIn: [@tadeubernacchi](https://linkedin.com/in/tadeubernacchi)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
